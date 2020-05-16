@@ -18,8 +18,9 @@
 
 	<script type="text/javascript">
 	$(function(){
-		$("#date1").datepicker();
-		$("#date2").datepicker();
+		$("#date1, #date2").datepicker({
+			dataFormat : 'yy-mm-dd'
+		});
 	});
 	</script>
 
