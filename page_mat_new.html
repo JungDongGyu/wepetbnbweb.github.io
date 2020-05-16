@@ -4,7 +4,7 @@
 	<title>맡기미 - 위펫_비앤비</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<link rel="stylesheet" href="css/styles.css">
-	<link rel="stylesheet" href="./jquery-ui-1.12./jquery-ui.min.css">
+	<link rel="stylesheet" href="./jquery-ui-1.12.1/jquery-ui.min.css">
 
 	<script
  	src="https://code.jquery.com/jquery-3.2.1.min.js"
@@ -17,12 +17,13 @@
 
 
 	<script type="text/javascript">
+	<script type="text/javascript">
 	$(function(){
-		$("#date1").datepicker();
-		$("#date2").datepicker();
+		$("#date1, #date2").datepicker({
+			dataFormat : 'yy-mm-dd'
+		});
 	});
 	</script>
-
 </head>
 <body>
 	<div id="navbar">
